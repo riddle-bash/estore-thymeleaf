@@ -165,4 +165,16 @@ public class ProductController {
 		
 		return "redirect:/products";
 	}
+	
+	@GetMapping("/delete")
+	public String deleteProduct(@Valid @RequestParam int id) {
+		try {
+			repository.deleteById(id);
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+			return "redirect:/products";
+		}
+		
+		return "redirect:/products";
+	}
 }
