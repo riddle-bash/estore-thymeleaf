@@ -9,7 +9,7 @@
   <body>
   	<div class="container">
     	<h1 class="text-center my-4">Our products list</h1>
-  		<a class="btn btn-primary" href="/products">Create product</a>
+  		<a class="btn btn-primary" href="/products/create">Create product</a>
   		
   		<table class="table">
   			<thead>
@@ -32,10 +32,10 @@
   					<td th:text="${product.brand}"></td>
   					<td th:text="${product.category}"></td>
   					<td th:text="@{${product.price} + '$'}"></td>
-  					<td th:text="${product.description}" width="350"></td>
+  					<td th:text="${product.description}" width="25%"></td>
   					<td>
   						<img th:src="@{'/images/' + ${product.imageFileName}}"
-  							alt="..." width="100">
+  							alt="..." width="130">
   					</td>
   					<td th:text="${product.timeCreated.toString().substring(0, 10)}"></td>
   					<td style="white-space: nowrap">

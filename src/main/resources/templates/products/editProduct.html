@@ -10,9 +10,16 @@
   	<div class="container">
   		<div class="row">
   			<div class="col-md-8 mx-auto rounded border p-4 m-4">
-  				<h2 class="text-center mb-5">New Product</h2>
+  				<h2 class="text-center mb-5">Edit Product</h2>
   				
   				<form method="post" enctype="multipart/form-data" th:object="${productDto}">
+  					<div class="row mb-3">
+  						<label class="col-sm-4 col-form-label">ID</label>
+  						<div class="col-sm-8">
+  							<input readonly class="form-control-plaintext" th:value="${product.id}">
+  						</div>
+  					</div>
+  					
   					<div class="row mb-3">
   						<label class="col-sm-4 col-form-label">Name</label>
   						<div class="col-sm-8">
@@ -64,6 +71,13 @@
   								th:errors="${productDto.description}"></p>
   						</div>
   					</div>
+  					
+  					<div class="row mb-3">
+  						<div class="offset-sm-4 col-sm-8">
+  							<img th:src="@{'/images/' + ${product.imageFileName}}"
+  								alt="..." width="130">
+  						</div>
+  					</div>
   				
   					<div class="row mb-3">
   						<label class="col-sm-4 col-form-label">Image</label>
@@ -71,6 +85,13 @@
   							<input class="form-control" type="file" th:field="${productDto.imageFile}">
   							<p th:if="${#fields.hasErrors('imageFile')}" th:errorclass="text-danger"
   								th:errors="${productDto.imageFile}"></p>
+  						</div>
+  					</div>
+  					
+  					<div class="row mb-3">
+  						<label class="col-sm-4 col-form-label">Date Posted</label>
+  						<div class="col-sm-8">
+  							<input readonly class="form-control-plaintext" th:value="${product.timeCreated}">
   						</div>
   					</div>
   					
