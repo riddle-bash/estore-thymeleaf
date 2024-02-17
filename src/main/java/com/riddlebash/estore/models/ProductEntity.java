@@ -1,4 +1,4 @@
-package com.example.testEstore.models;
+package com.riddlebash.estore.models;
 
 import java.util.Date;
 

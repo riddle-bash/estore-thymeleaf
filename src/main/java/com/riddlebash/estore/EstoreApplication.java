@@ -1,13 +1,13 @@
-package com.example.testEstore;
+package com.riddlebash.estore;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class TestEstoreApplication {
+public class EstoreApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(TestEstoreApplication.class, args);
+		SpringApplication.run(EstoreApplication.class, args);
 	}
 
 }

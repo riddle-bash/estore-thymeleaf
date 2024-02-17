@@ -1,4 +1,4 @@
-package com.example.testEstore.controllers;
+package com.riddlebash.estore.controllers;
 
 import java.io.InputStream;
 import java.nio.file.Files;
@@ -19,9 +19,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 
-import com.example.testEstore.models.ProductDto;
-import com.example.testEstore.models.ProductEntity;
-import com.example.testEstore.services.ProductRepository;
+import com.riddlebash.estore.models.ProductDto;
+import com.riddlebash.estore.models.ProductEntity;
+import com.riddlebash.estore.services.ProductRepository;
 
 import jakarta.validation.Valid;
 

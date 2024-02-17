@@ -1,4 +1,4 @@
-package com.example.testEstore.models;
+package com.riddlebash.estore.models;
 
 import org.springframework.web.multipart.MultipartFile;
 
