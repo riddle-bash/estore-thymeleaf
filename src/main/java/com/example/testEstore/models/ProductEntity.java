@@ -2,6 +2,7 @@ package com.example.testEstore.models;
 
 import java.util.Date;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -19,7 +20,10 @@ public class ProductEntity {
 	private String brand;
 	private String category;
 	private double price;
+	
+	@Column(columnDefinition = "TEXT")
 	private String description;
+	
 	private String imageFileName;
 	private Date timeCreated;
 	
