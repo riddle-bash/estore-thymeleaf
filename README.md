@@ -4,6 +4,8 @@
 
 Framework/Template Engine: Spring Boot, Thymeleaf, Bootstrap.
 
+Package Manager: Maven
+
 Database: PostgreSQL.
 
 Container: Docker.
