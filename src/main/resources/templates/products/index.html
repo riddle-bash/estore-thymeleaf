@@ -28,16 +28,16 @@
   			<tbody>
   				<tr th:each="product : ${products}">
   					<td th:text="${product.id}"></td>
-  					<td th:text="${product.name}"></td>
+  					<td th:text="${product.name}" width="10%"></td>
   					<td th:text="${product.brand}"></td>
   					<td th:text="${product.category}"></td>
   					<td th:text="@{${product.price} + '$'}"></td>
   					<td th:text="${product.description}" width="25%"></td>
   					<td>
   						<img th:src="@{'/images/' + ${product.imageFileName}}"
-  							alt="..." width="130">
+  							alt="..." width="200">
   					</td>
-  					<td th:text="${product.timeCreated.toString().substring(0, 10)}"></td>
+  					<td th:text="${product.timeCreated.toString().substring(0, 10)}" width="10%"></td>
   					<td style="white-space: nowrap">
   						<a class="btn btn-primary btn-sm"
   							th:href="@{/products/edit(id=${product.id})}">Edit</a>
